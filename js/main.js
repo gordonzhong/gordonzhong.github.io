@@ -12,7 +12,7 @@ var d;
 // Sender Button
 $(document).ready(function () {
     $("#sender").hover(function () {
-        $("#sender").removeClass("animated bounceInLeft delay-3s");
+        $("#sender").removeClass("animated bounceInUp delay-3s");
         $("#sender").addClass("animated heartBeat");
     }, function () {
         $("#sender").removeClass("heartBeat");
