@@ -73,7 +73,6 @@ function senderNext() {
     p1.innerHTML = "p = " + p;
     p2.innerHTML = "q = " + q;
     p3.innerHTML = "n = " + n;
-
 }
 
 function senderNext2() {
@@ -102,7 +101,6 @@ function senderNext2() {
     p1.innerHTML = "n' = " + localStorage['pq'];
     p2.className = "lead col animated bounceInUp slow";
     p2.innerHTML = "e = " + localStorage['e'];
-
 }
 
 function senderNext3() {
@@ -116,6 +114,9 @@ function senderNext3() {
     p1.innerHTML = "";
     p2.innerHTML = "";
     p3.innerHTML = "";
+
+    var header = document.getElementById("public");
+    header.className = "animated bounceInDown";
 
     var tutorial = document.getElementById("tutorial");
     tutorial.className = "lead animated fadeInUp";
@@ -141,8 +142,11 @@ function privateKeyNext() {
 
     var tutorial = document.getElementById("tutorial1");
     tutorial.className = "lead animated flipInX";
-
     tutorial.innerHTML = "Here's what we end up with. Remember to keep your private key hidden!";
+
+    var header = document.getElementById("header");
+    header.className = "animated bounceInDown";
+
     p3.className = "lead animated bounceInDown delay-1s";
     p4.className = "lead animated bounceInUp delay-2s";
 

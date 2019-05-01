@@ -19,11 +19,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 
-<body class="text-center animated fadeIn slow">
+<body class="text-center">
 
 <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
 
-    <header class="masthead mb-auto animated flipInX">
+    <header class="masthead mb-auto">
         <div class="inner">
             <h3 class="masthead-brand">CSCI 4741</h3>
             <nav class="nav nav-masthead justify-content-center">
@@ -34,18 +34,12 @@
     </header>
 
     <main role="main" class="inner cover">
-        <h2 id="header" class="animated bounceInLeft">Private Keys:</h2>
-        <h3 id="tutorial1" class="lead animated bounceIn">The private key, d, is generated from this equation:
-            <strong> d * e ≡ 1 (mod n'). </strong> <br>We can re-write the equation like this
-            to make it easier to understand: <u>(d * e) mod n' = 1</u></h3>
-        <div class="row">
-            <p id="p1" style="text-align:right" class="col lead"></p>
-            <p id="q1" style="text-align:left" class="col lead"></p>
-        </div>
-        <p id="n1" class="lead"></p>
-        <p id="n2" class="lead"></p>
-        <p id="privateKey1" class="lead"></p>
-        <button id="next1" class="btn btn-md btn-secondary animated bounceInUp delay-1s" onclick="privateKeyNext()">Next!</button>
+        <h2 class="cover-heading animated bounceInDown">Sources:</h2>
+        <a href="https://github.com/daneden/animate.css"><p class="lead animated bounceInLeft slow">https://github.com/daneden/animate.css</p></a>
+        <a href="https://brilliant.org/wiki/rsa-encryption/"><p class="lead animated bounceInRight slow">https://brilliant.org/wiki/rsa-encryption</p></a>
+        <a href="https://www.geeksforgeeks.org/rsa-algorithm-cryptography/"><p class="lead animated bounceInLeft delay-1s">https://www.geeksforgeeks.org/rsa-algorithm-cryptography</p></a>
+        <a href="https://www.tutorialspoint.com/cryptography/public_key_encryption.htm"><p class="lead animated bounceInRight delay-2s">https://www.tutorialspoint.com/cryptography/public_key_encryption.htm</p></a>
+
     </main>
 
     <footer class="mastfoot mt-auto">
