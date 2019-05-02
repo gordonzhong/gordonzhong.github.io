@@ -94,8 +94,9 @@ function senderNext2() {
     header.className = "animated bounceInUp";
 
     var linebreak = "<br>";
-    tutorial.innerHTML = "<br>n' = (p - 1) * (q - 1) = " + "(" + localStorage['p'] + " - 1) * " + "(" + localStorage['q'] + " - 1)" + linebreak + linebreak + "Next, a small number greater than 1, less than n', and is relatively prime to " +
-        "n' is chosen for the exponent. This makes up the other half of the key.";
+    tutorial.innerHTML = "<br>n' = (p - 1) * (q - 1) = " + "(" + localStorage['p'] + " - 1) * " + "(" + localStorage['q'] + " - 1)" + linebreak + linebreak + "For the second half of the public key, we first need to calculate n'. " +
+        "Then, a small number greater than 1, less than n', and is relatively prime to " +
+        "n' is chosen for the exponent.";
 
     p1.className = "lead col animated bounceInUp slow";
     p1.innerHTML = "n' = " + localStorage['pq'];
